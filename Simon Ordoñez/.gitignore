@@ -1,0 +1,116 @@
+numero = int(input("digite un número: "))
+salida = numero or "Has digitado valor falsy"
+print(f"Salida: {salida} ")
+
+dividiendo = int(input("Digite el dividiendo "))
+divisor = int(input("Digite el divisor "))
+while divisor == 0:
+ break
+resultado = dividiendo // divisor
+print(f"El resultado es {resultado}")
+
+puesto = str(input("Digite su puesto"))
+if puesto == str("secretaria"):
+    salario = 2400000
+    horas_extras = salario / 730001
+elif puesto == str("contador"):
+    salario = 4000000
+    horas_extras = salario / 730001
+elif puesto == str("almacenista"):
+   salario = 3500000
+   horas_extras = salario / 730001
+horas_extras_totales = int(input("Digite el número de horas extras trabajadas"))
+horas_extras_totales = horas_extras_totales * horas_extras
+salario_total = salario + horas_extras_totales
+print("Su salario es ", salario_total)
+
+estudiante = str(input("Digite su nombre "))
+nota = int(input("Digite su nota "))
+if nota >= int(5):
+  print(estudiante," su nota es excelente")
+else: 
+  if nota >= int(4):
+   print(estudiante," su nota es sobresaliente")     
+  else: 
+   if nota >= int(3):
+    print(estudiante," su nota es la mínima") 
+   else: 
+    if nota >= int(2):
+     print(estudiante," su nota es reprobatoria")
+    else: 
+     if nota >= int(1):
+              print(estudiante," su nota es reprobatoria")          
+     else: 
+      if nota >= int(0):
+              print(estudiante," su nota es reprobatoria")
+
+print("            MENÚ                    ")
+print("Hamburguesa                   $20000")
+print("Empanada hawaiana              $2500")
+print("Pizza de pollo                 $5000")
+print("Pastas de pollo               $20000")
+print("Huevos                        $10000")
+menu_seleccionado = str(input("Escriba el nombre del plato al que quiera ver sus ingrediente "))
+if menu_seleccionado == str("Hamburguesa"):
+    print("Pan, queso, salsa de tomate, tomate, cebolla, carne, tocineta")
+else:
+    if menu_seleccionado == str("Empanada hawaiana"):
+        print("Masa, piña, jamón, queso")
+    else:
+        if menu_seleccionado == str("Pizza de pollo"):
+            print("Masa, queso, pollo, champñones")
+        else:
+            if menu_seleccionado == str("Pastas de pollo"):
+                print("Pastas, queso, salsa de tomate, queso, pollo")
+            else:
+                if menu_seleccionado == str("Huevos"):
+                    print("Huevos, queso, salchicha, tomate, cebolla")
+
+def suma(a, b):
+  return a + b
+
+def resta(a, b):
+  return a - b
+
+def multiplicacion(a, b):
+  return a * b
+
+def division(a, b):
+  if b == 0:
+    return "Error: no se puede dividir entre cero"
+  return a / b
+
+print("Calculadora básica")
+print("1. Suma")
+print("2. Resta")
+print("3. Multiplicación")
+print("4. División")
+
+opcion = int(input("Seleccione una opción: "))
+
+if opcion == 1:
+  num1 = float(input("Ingrese el primer número: "))
+  num2 = float(input("Ingrese el segundo número: "))
+  resultado = suma(num1, num2)
+  print("El resultado es:", resultado)
+
+elif opcion == 2:
+  num1 = float(input("Ingrese el primer número: "))
+  num2 = float(input("Ingrese el segundo número: "))
+  resultado = resta(num1, num2)
+  print("El resultado es:", resultado)
+
+elif opcion == 3:
+  num1 = float(input("Ingrese el primer número: "))
+  num2 = float(input("Ingrese el segundo número: "))
+  resultado = multiplicacion(num1, num2)
+  print("El resultado es:", resultado)
+
+elif opcion == 4:
+  num1 = float(input("Ingrese el primer número: "))
+  num2 = float(input("Ingrese el segundo número: "))
+  resultado = division(num1, num2)
+  print("El resultado es:", resultado)
+
+else:
+  print("Opción inválida")
