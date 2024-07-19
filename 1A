@@ -1,0 +1,3 @@
+numero = int(input("digite un número: "))
+salida = numero or "Has digitado valor falsy"
+print(f"Salida: {salida} ")
