@@ -1,0 +1,6 @@
+dividiendo = int(input("Digite el dividiendo "))
+divisor = int(input("Digite el divisor "))
+while divisor == 0:
+ break
+resultado = dividiendo // divisor
+print(f"El resultado es {resultado}")
